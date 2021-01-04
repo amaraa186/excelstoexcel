@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.6/xlsx.core.min.js"></script>
+    <script src="FileSaver.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/infragistics.core.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_core.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collections.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_text.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_io.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_ui.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.documents.core_core.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collectionsextended.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.excel_core.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_threading.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_web.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.xml.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.documents.core_openxml.js"></script>
+    <script src="https://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.excel_serialization_openxml.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="./extrajs/kanjidate.js"></script>
+
+    <title>Convert excel to JSON Object</title>
+
+    <style>
+      h4 {
+        margin-left: 17px;
+      }
+      .form-control {
+        height: calc(1.5em + 0.75rem + 8px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5 p-5 my-3 border shadow">
+      <div class="d-flex justify-content-around">
+        <div class="p-5 my-1 border">
+          <h4>Input Data 1</h4>
+          <div class="col-md-12">
+            <input
+              class="form-control"
+              type="file"
+              id="input1"
+              accept=".xls,.xlsx"
+              multiple
+            />
+          </div>
+        </div>
+        <div class="p-5 my-1 border">
+          <h4>Input Data 2</h4>
+          <div class="col-md-12">
+            <input
+              class="form-control"
+              type="file"
+              id="input2"
+              accept=".xls,.xlsx"
+              multiple
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="col-md-2" style="padding-left: 46.3%">
+        <button class="btn btn-primary" id="button">Convert</button>
+      </div>
+    </div>
+  </body>
+  <script src="jexcel.js"></script>
+  <script src="SheetTwo.js"></script>
+  <script src="sheetThree.js"></script>
+  <script src="sheetFour.js"></script>
+</html>
